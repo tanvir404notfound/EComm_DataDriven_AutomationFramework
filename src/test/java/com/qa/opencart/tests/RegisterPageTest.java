@@ -48,5 +48,5 @@ public class RegisterPageTest extends BaseTest{
 
 	
 	//10
-	//0
+	//1:13:00
 }
