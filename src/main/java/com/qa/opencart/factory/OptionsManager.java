@@ -30,7 +30,6 @@ public class OptionsManager {
 	
 	public FirefoxOptions getFireFoxOptions() {
 		fo = new FirefoxOptions();
-		fo.addArguments("--remote-allow-origins=*");
 		if(Boolean.parseBoolean(prop.getProperty("headless"))) fo.addArguments("--headless");	
 		if(Boolean.parseBoolean(prop.getProperty("incognito")))	fo.addArguments("--incognito");
 		return fo;
@@ -38,7 +37,6 @@ public class OptionsManager {
 	
 	public EdgeOptions getEdgeOptions() {
 		eo = new EdgeOptions();
-		eo.addArguments("--remote-allow-origins=*");
 		if(Boolean.parseBoolean(prop.getProperty("headless"))) eo.addArguments("--headless");	
 		if(Boolean.parseBoolean(prop.getProperty("incognito")))	eo.addArguments("--incognito");
 		return eo;

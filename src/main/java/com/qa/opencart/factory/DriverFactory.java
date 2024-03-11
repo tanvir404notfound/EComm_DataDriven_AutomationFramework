@@ -37,8 +37,8 @@ public class DriverFactory {
 		
 		highlight = prop.getProperty("highlight");
 		
-		//String browserName = prop.getProperty("browser").toLowerCase().trim();
-		String browserName = System.getProperty("browser");
+		String browserName = prop.getProperty("browser").toLowerCase().trim();
+		//String browserName = System.getProperty("browser");
 		
 		System.out.println("browser name is: "+browserName);
 		
