@@ -37,6 +37,7 @@ public class OptionsManager {
 	
 	public EdgeOptions getEdgeOptions() {
 		eo = new EdgeOptions();
+		eo.addArguments("--guest");
 		if(Boolean.parseBoolean(prop.getProperty("headless"))) eo.addArguments("--headless");	
 		if(Boolean.parseBoolean(prop.getProperty("incognito")))	eo.addArguments("--incognito");
 		return eo;
