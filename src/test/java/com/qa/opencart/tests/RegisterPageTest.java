@@ -47,6 +47,9 @@ public class RegisterPageTest extends BaseTest{
 	}
 
 	
-	//15
-	//1:09:00
+	//16
+	//30:00
+	
+	//powershell
+	//wsl --shutdown
 }

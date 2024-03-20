@@ -93,7 +93,7 @@ public class DriverFactory {
 		return getDriver();
 	}
 	
-	@SuppressWarnings("deprecation")
+	
 	private void init_remoteDriver(String browser) {
 		
 		System.out.println("Running tests on grid server:::" + browser);
