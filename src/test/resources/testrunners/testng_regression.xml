@@ -6,12 +6,9 @@
 
 
 	<listeners>
-		<listener
-			class-name="com.qa.opencart.listeners.ExtentReportListener" />
-			<listener
-			class-name="com.qa.opencart.listeners.AllureReportListener" />	
-			<listener
-			class-name="com.qa.opencart.listeners.AnnotationTransformer" />		
+		 <listener class-name="com.qa.opencart.listeners.ExtentReportListener"/> 
+		<listener  class-name="com.qa.opencart.listeners.AllureReportListener" />
+     <listener class-name="com.qa.opencart.listeners.AnnotationTransformer" />
 	</listeners>
 
 	<test name="Login Page Test_firefox">
@@ -41,7 +38,13 @@
 			<class name="com.qa.opencart.tests.RegisterPageTest" />
 		</classes>
 	</test>
-
 	
+	<!--<test name="Register Page Test_firefox_123.0">
+		<parameter name="browser" value="firefox" />
+		<parameter name="browserversion" value="123.0" />
+		<classes>
+			<class name="com.qa.opencart.tests.RegisterPageTest" />
+		</classes>
+	</test>-->
 
 </suite>

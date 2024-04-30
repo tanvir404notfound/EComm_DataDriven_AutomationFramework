@@ -24,6 +24,7 @@ public class ProductInfoPage {
 	private By productQtyTextBox = By.id("input-quantity");
 	private By addToCartBTN = By.id("button-cart");
 	private By addToCartSuccessMSG = By.cssSelector("div.alert.alert-success");
+	private By shoppingCartBTN = By.xpath("//a[@title='Shopping Cart']");
 	
 	private Map<String, String> productInfoMap;
 
@@ -98,5 +99,9 @@ public class ProductInfoPage {
 		productInfoMap.put("exTax", exTaxVal);
 	}
 	
+	public CartPage selectProduct() {
+		eleUtil.waitForElementVisible(shoppingCartBTN, AppConstants.DEFAULT_MEDIUM_TIME_OUT).click();
+		return new CartPage(driver);
+	}
 	
 }

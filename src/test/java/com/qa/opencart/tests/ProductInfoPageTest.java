@@ -6,6 +6,7 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
 import com.qa.opencart.base.BaseTest;
 
@@ -41,6 +42,7 @@ public class ProductInfoPageTest extends BaseTest {
 		prodInfoPage = searchPage.selectProduct("MacBook Pro");
 		Map<String, String> actProductInfoMap = prodInfoPage.getProductInfo();
 		System.out.println(actProductInfoMap);
+		SoftAssert softAssert = new SoftAssert();
 		softAssert.assertEquals(actProductInfoMap.get("Brand"), "Apple");
 		softAssert.assertEquals(actProductInfoMap.get("Product Code"), "Product 18");
 		softAssert.assertEquals(actProductInfoMap.get("productname"), "MacBook Pro");
@@ -56,11 +58,11 @@ public class ProductInfoPageTest extends BaseTest {
 		prodInfoPage.enterQuantity(1);
 		prodInfoPage.addProductToCart();
 		String actCartMSG = prodInfoPage.getAddToCartSuccessMSG();
-		
+		SoftAssert softAssert = new SoftAssert();
 		softAssert.assertTrue(actCartMSG.contains("Success"));
 		softAssert.assertTrue(actCartMSG.contains("MacBook Pro"));
 		
-		softAssert.assertEquals(actCartMSG, "Success: You have added MacBook Pro to your shopping cart!");
+		softAssert.assertEquals(actCartMSG, "Ruccess: You have added MacBook Pro to your shopping cart!");
 		
 		softAssert.assertAll();
 	}
