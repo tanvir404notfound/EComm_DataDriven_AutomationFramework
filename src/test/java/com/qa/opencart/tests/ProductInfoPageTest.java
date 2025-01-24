@@ -62,7 +62,7 @@ public class ProductInfoPageTest extends BaseTest {
 		softAssert.assertTrue(actCartMSG.contains("Success"));
 		softAssert.assertTrue(actCartMSG.contains("MacBook Pro"));
 		
-		softAssert.assertEquals(actCartMSG, "Suweweccess: You have added MacBook Pro to your shopping cart!");
+		softAssert.assertEquals(actCartMSG, "Success: You have added MacBook Pro to your shopping cart!");
 		
 		softAssert.assertAll();
 	}
