@@ -2,7 +2,6 @@ package com.qa.opencart.tests;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import java.util.Random;
 
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
@@ -52,4 +51,5 @@ public class RegisterPageTest extends BaseTest{
 	
 	//powershell
 	//wsl --shutdown
+	
 }
