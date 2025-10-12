@@ -11,6 +11,7 @@ This project demonstrates data-driven testing and parallel execution for efficie
 
 
 ## Technologies Used
+-Web Automation Tool: Selenium WebDriver
 -Languages: Java
 -Testing tool/framework: TestNG
 -Build tool: Maven
